@@ -1,0 +1,34 @@
+.button {
+  inline-size: 32px;
+  block-size: 32px;
+  border: none;
+  background-color: unset;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  outline: none;
+}
+
+#play {
+  background-image: url("../images/play.svg");
+}
+
+#pause {
+  background-image: url("../images/pause.svg");
+}
+
+#backward {
+  background-image: url("../images/-10.svg");
+}
+
+#forward {
+  background-image: url("../images/+10.svg");
+}
+
+#fullscreen {
+  background-image: url("../images/fullscreen.svg");
+}
+#minscreen {
+  background-image: url("../images/minscreen.svg");
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Video player</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="wrapper">
+        <div class="video-content" id="video-content">
+          <video
+            class="video"
+            id="video"
+            src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+          ></video>
+          <div class="player-overlay" id="player-overlay">
+            <div class="player-actions">
+              <button
+                class="button"
+                id="backward"
+                aria-label="Retroceder 10 segundos"
+                title="Retroceder 10 segundos"
+              ></button>
+              <button
+                class="button"
+                id="play"
+                aria-label="Reproducir"
+                title="Reproducir"
+              ></button>
+              <button
+                class="button"
+                hidden
+                id="pause"
+                aria-label="Pausar"
+                title="Pausar"
+              ></button>
+              <button
+                class="button"
+                id="forward"
+                aria-label="Adelantar 10 segundos"
+                title="Adelantar 10 segundos"
+              ></button>
+            </div>
+            <div class="player-progress">
+              <input
+                type="range"
+                name="range"
+                id="progress"
+                min="0"
+                value="0"
+                step="1"
+              />
+              <button
+                class="button"
+                id="fullscreen"
+                aria-label="pantalla completa"
+                title="pantalla completa"
+              ></button>
+              <button
+                class="button"
+                hidden
+                id="minscreen"
+                aria-label="pantalla minima"
+                title="pantalla minima"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

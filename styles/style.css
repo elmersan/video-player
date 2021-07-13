@@ -1,0 +1,72 @@
+@import url("./button.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background: #26b4bc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  max-inline-size: 900px;
+  margin: 0 auto;
+}
+
+.video-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-content video {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.player-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  gap: 20px;
+}
+
+.player-progress {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline: 0;
+  display: flex;
+  z-index: 2;
+  padding: 10px;
+  gap: 20px;
+}
+
+.player-progress input {
+  flex: 1;
+}
+
+.player-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 0.3s opacity;
+}
+
+.video-content:hover .player-overlay {
+  opacity: 1;
+}
